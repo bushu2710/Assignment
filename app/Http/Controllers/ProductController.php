@@ -131,6 +131,7 @@ class ProductController extends Controller
             'product_desc' => 'required',
             'status' => 'required'
         ]);
+        
         $file = $request->file('featured_image');
         if ($file) {
             $destinationPath = 'image/';
